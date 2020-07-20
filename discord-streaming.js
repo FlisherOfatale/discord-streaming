@@ -1,9 +1,10 @@
 /*
 Streaming Highligh Module for DiscordJS
 Author: Flisher (andre@jmle.net)
-Version 2.0.0
+Version 2.2.0
 
 ##History:
+2.2.0 Improved error logging  
 2.0.0 Initial push to GitHub, and Initial Discord.js v12 verion  
 1.4.1 Last Discord.JS V11 version, you can install it by using "npm i discord-streaming@discord.js-v11"
 1.0.0 Initial publish  
@@ -21,7 +22,7 @@ module.exports = async (bot, options) => {
 	const description = {
 		name: `discord-Streaming`,
 		filename: `discord-streaming.js`,
-		version: `2.0.0`
+		version: `2.2.0`
 	}
 
 	console.log(`Module: ${description.name} | Loaded - version ${description.version} from ("${description.filename}")`)
@@ -103,6 +104,7 @@ module.exports = async (bot, options) => {
 			}
 		} catch (e) {
 			console.error(`${description.name} -> StreamingLive - Bot could not assign role to ${member} of guild ${member.guild} / ${member.guild.id} )`);
+			console.error(e)
 		}
 		return actionTaken
 	}
@@ -120,6 +122,7 @@ module.exports = async (bot, options) => {
 			}
 		} catch (e) {
 			console.error(`${description.name} -> StreamingLive - Bot could not remove role to ${member} of guild ${member.guild} / ${member.guild.id} )`);
+			console.error(e)
 		}
 		return actionTaken
 	}
