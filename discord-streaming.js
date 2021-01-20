@@ -1,9 +1,10 @@
 /*
 Streaming Highligh Module for DiscordJS
 Author: Flisher (andre@jmle.net)
-Version 2.2.0
+Version 2.2.4
 
 ##History:
+2.2.4 Fixing error on missing .cache
 2.2.0 Improved error logging  
 2.0.0 Initial push to GitHub, and Initial Discord.js v12 verion  
 1.4.1 Last Discord.JS V11 version, you can install it by using "npm i discord-streaming@discord.js-v11"
@@ -22,7 +23,7 @@ module.exports = async (bot, options) => {
 	const description = {
 		name: `discord-Streaming`,
 		filename: `discord-streaming.js`,
-		version: `2.2.0`
+		version: `2.2.4`
 	}
 
 	console.log(`Module: ${description.name} | Loaded - version ${description.version} from ("${description.filename}")`)
@@ -63,7 +64,7 @@ module.exports = async (bot, options) => {
 
 		if (options && options.live) {
 			// Single Server Config, will default to first guild found in the bot
-			let guild = bot.guilds.first();
+			let guild = bot.guilds.cache.first();
 			await StreamingLive(guild, options)
 			await StreamingNotLive(guild, options)
 		} else {

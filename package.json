@@ -1,6 +1,6 @@
 {
   "name": "discord-streaming",
-  "version": "2.2.0",
+  "version": "2.2.4",
   "description": "Simple Discord.js v12 Module that assign temporary role to live streamers, usefull to highlight them in a separate group.",
   "main": "discord-streaming.js",
   "scripts": {

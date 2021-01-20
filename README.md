@@ -61,6 +61,7 @@ Liens:  https://www.bucherons.ca et https://www.gardiensdulys.com
 You can reach me via my Discord Development Server at https://discord.gg/Tmtjkwz
 
 ###History:  
+2.2.4 Fixing error on missing .cache
 2.2.0 Improved error logging  
 2.0.0 Initial push to GitHub, and Initial Discord.js v12 verion  
 1.4.1 Last Discord.JS V11 version, you can install it by using "npm i discord-streaming@discord.js-v11"  
