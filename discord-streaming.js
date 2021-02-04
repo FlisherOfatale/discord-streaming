@@ -24,7 +24,7 @@ module.exports = async (bot, options) => {
 	const description = {
 		name: `discord-Streaming`,
 		filename: `discord-streaming.js`,
-		version: `2.3.0-bugfix`
+		version: `2.3.1`
 	}
 
 	console.log(`Module: ${description.name} | Loaded - version ${description.version} from ("${description.filename}")`)
