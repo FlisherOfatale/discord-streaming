@@ -61,6 +61,7 @@ Liens:  https://www.bucherons.ca et https://www.gardiensdulys.com
 You can reach me via my Discord Development Server at https://discord.gg/Tmtjkwz
 
 ###History:  
+2.3.1 Fixed a possible error on line 100 when roles was not accessible, bumped depedencies version
 2.2.4 Fixing error on missing .cache
 2.2.0 Improved error logging  
 2.0.0 Initial push to GitHub, and Initial Discord.js v12 verion  

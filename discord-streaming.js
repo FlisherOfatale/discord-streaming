@@ -1,9 +1,10 @@
 /*
 Streaming Highligh Module for DiscordJS
 Author: Flisher (andre@jmle.net)
-Version 2.2.4
+Version 2.3.1
 
 ##History:
+2.3.1 Fixed a possible error on line 100 when roles was not accessible, bumped depedencies version
 2.2.4 Fixing error on missing .cache
 2.2.0 Improved error logging  
 2.0.0 Initial push to GitHub, and Initial Discord.js v12 verion  
@@ -23,7 +24,7 @@ module.exports = async (bot, options) => {
 	const description = {
 		name: `discord-Streaming`,
 		filename: `discord-streaming.js`,
-		version: `2.2.4`
+		version: `2.3.1`
 	}
 
 	console.log(`Module: ${description.name} | Loaded - version ${description.version} from ("${description.filename}")`)
@@ -85,10 +86,15 @@ module.exports = async (bot, options) => {
 
 	function gotRequiredRole(member, requiredRole) {
 		let returnValue = false
-		if (typeof requiredRole !== "undefined") {
-			returnValue = (typeof (member.roles.cache.find(val => val.name === requiredRole || val.id === requiredRole)) !== "undefined")
-		} else {
-			returnValue = true
+		try {
+			if (typeof requiredRole !== "undefined" && member && member.roles && member.roles.cache) {
+				returnValue = (typeof (member.roles.cache.find(val => val.name === requiredRole || val.id === requiredRole)) !== "undefined")
+			} else {
+				returnValue = true
+			}
+		} catch (e) {
+			console.error(`${description.name} -> StreamingLive - Bot failed the gotRequiredRole function for ${member} of guild ${member.guild} / ${member.guild.id} )`);
+			console.error(e)
 		}
 		return returnValue
 	}
