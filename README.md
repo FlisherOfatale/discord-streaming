@@ -9,9 +9,10 @@ Simply type the following command to install the module and it depedencies.
 ```
 npm i discord-streaming
 ``` 
-## Discord.js v11 compatibility
-You can install the last version working with Discord.js v11 by using "npm install discord-streaming@discord.js-v11".
-While this version should work, it's not maintainted anymore.
+##Discord.js v11 and v12 compatibility 
+You can install DiscordJS v11 and v12 version using tag.  These aren't maintained anymore.
+V11: `npm install discord-playing@discord.js-v11`
+V12: `npm install discord-playing@discord.js-v12`
 
 ## Instructions
 
@@ -61,8 +62,9 @@ Liens:  https://www.bucherons.ca et https://www.gardiensdulys.com
 You can reach me via my Discord Development Server at https://discord.gg/Tmtjkwz
 
 ###History:  
-2.3.1 Fixed a possible error on line 100 when roles was not accessible, bumped depedencies version
-2.2.4 Fixing error on missing .cache
+3.0.0 Initial release for DiscordJS v13.  
+2.3.1 Fixed a possible error on line 100 when roles was not accessible, bumped depedencies version.  
+2.2.4 Fixing error on missing .cache  
 2.2.0 Improved error logging  
 2.0.0 Initial push to GitHub, and Initial Discord.js v12 verion  
 1.4.1 Last Discord.JS V11 version, you can install it by using "npm i discord-streaming@discord.js-v11"  
