@@ -14,7 +14,7 @@ module.exports = async (client, options) => {
 	const description = {
 		name: `discord-Streaming`,
 		filename: `discord-streaming.js`,
-		version: `3.0.0`
+		version: `3.0.1`
 	}
 
 	let Ready = false

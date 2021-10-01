@@ -1,7 +1,7 @@
 <p align="center"><a href="https://nodei.co/npm/discord-streaming/"><img src="https://nodei.co/npm/discord-streaming.png"></a></p>
 
 # discord-streaming
-An extremely simple module that highligh Live Streamers by assigning them a temporary role 
+An extremely simple DiscordJS V13 module that highligh Live Streamers by assigning them a temporary role 
 
 ## Installation
 This module assumes you already have a basic [Discord.js](https://discord.js.org/#/) bot setup.
@@ -11,8 +11,8 @@ npm i discord-streaming
 ``` 
 ##Discord.js v11 and v12 compatibility 
 You can install DiscordJS v11 and v12 version using tag.  These aren't maintained anymore.
-V11: `npm install discord-playing@discord.js-v11`
-V12: `npm install discord-playing@discord.js-v12`
+V11: `npm install discord-streaming@discord.js-v11`  
+V12: `npm install discord-streaming@discord.js-v12`  
 
 ## Instructions
 
@@ -62,7 +62,7 @@ Liens:  https://www.bucherons.ca et https://www.gardiensdulys.com
 You can reach me via my Discord Development Server at https://discord.gg/Tmtjkwz
 
 ###History:  
-3.0.0 Initial release for DiscordJS v13.  
+3.0.1 Initial release for DiscordJS v13.  
 2.3.1 Fixed a possible error on line 100 when roles was not accessible, bumped depedencies version.  
 2.2.4 Fixing error on missing .cache  
 2.2.0 Improved error logging  
